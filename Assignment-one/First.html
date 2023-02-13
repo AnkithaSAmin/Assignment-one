@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, Serif;
+}
+
+/* Style the top navigation bar */
+
+#top-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background-color: white;
+	width: 100%;
+	box-shadow: 0px 2px 5px black;
+}
+
+/* Style the topnav menus */
+
+#top-nav a {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 795);
+	font-size: 20px;
+	display: inline-block;
+	padding: 6px;
+	margin: 13px;
+	letter-spacing: 3px;
+}
+
+/* Style the navigation to right */
+
+#top-nav-right {
+	float: right;
+	margin-right: 10px;
+}
+
+/* Change color on hover */
+ 
+#top-nav a:hover {
+	background-color: #ddd;
+	color: rgba(0, 0, 0, 795);
+}
+
+/* style the Home section */
+
+#home-section {
+	position: relative;
+	margin-bottom: 50px;
+	padding: 50px 50px;	
+}
+
+#home-section p {
+	position: absolute;
+	bottom: 30px;
+	left: 70px;
+	font-size: 40px;
+	color: grey;
+	letter-spacing: 3px;
+}
+
+/* Style each section */
+
+#section-container {
+	width: 70%;
+	margin: auto;
+}
+
+#section-container img {
+	border-radius: 5px;
+}
+
+/* Style the About section */
+
+#about-section h1 {
+	text-align: center;
+	margin-top: 0px;
+	letter-spacing: 3px;
+}
+
+#about-section p1 {
+	font-size: 15px;
+	margin-left: 65px;
+	letter-spacing: 3px;
+}
+
+#about-section p {
+	font-size: 15px;
+}
+
+#about-section {
+	padding: 70px;
+	
+}
+
+
+#image-container {
+	box-sizing: border-box;
+	width: 49%;
+	float: left;
+ 	padding: 10px 20px;
+}
+
+#image-container {
+	opacity: 0.7;
+}
+
+#grey {
+	color: grey;
+}
+
+#text-container {
+	box-sizing: border-box;
+	width: 49%;
+	float: left;
+	padding: 10px 20px;
+}
+
+#about-section::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Style the Menu section */
+
+#menu-section {
+	padding-top: 70px;
+	margin-bottom: 50px;
+}
+
+#menu-section::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#text-container2 {
+	box-sizing: border-box;
+	padding: 10px 20px;
+	width: 49%;
+	float: left;
+	
+}
+
+#text-container2 p {
+	color: grey;
+	font-size: 13px;
+}
+
+#image-container2 {
+	box-sizing: border-box;
+	padding: 10px 20px;
+	width: 49%;
+	float: left;
+}
+
+/* Style the Contact section */
+
+#contact-section {
+	padding: 70px 20px;
+	margin-bottom: 50px;
+	letter-spacing: 1px;
+}
+
+#contact-section p {
+	font-size: 15px;
+}
+
+#contact-section input[type="text"], #contact-section input[type="date"] {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid grey;
+	font-size: 15px;
+	padding: 15px;
+}
+
+button {
+	margin-top: 30px;
+	border: none;
+	background-color: rgb(211, 211, 211);
+	font-family: serif;
+	font-size: 15px;
+	padding: 15px;
+}
+
+button:hover {
+	background-color: grey;
+}
+
+/* Style the footer */
+
+#footer {
+	padding: 40px;
+	background-color: rgb(128, 128, 128, 0.329);
+	text-align: center;
+	font-size: 10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="top-nav">
+	<a href="#home-section" style="float:left;">Gourmet au Catering</a>
+	<div id="top-nav-right">
+		<a href="#about-section">About</a>
+		<a href="#menu-section">Menu</a>
+		<a href="#contact-section">Contact</a>
+	</div>
+</div>
+
+<div id="home-section">
+	<img src="Burger.jpg" width="100%" alt="Burger image">
+	<p>Le Catering</p>
+</div>
+
+<div id="section-container">
+	<div id="about-section">
+		<div id="image-container">
+			<img src="About.jpg" width="100%" alt="About image">
+		</div> 
+		<div id="text-container">
+			<h1>About Catering</h1>
+			<p1>Tradition Since 1889</p1>
+			<p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p></p>
+			<p id="grey">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+	</div>
+	<hr>
+	<div id="menu-section">
+		<div id="text-container2">
+			<h1 style="margin-top: 0px; text-align: center;">Our Menu</h1>
+			<h5>Bread Basket</h5>
+			<p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+			<h5>Honey Almond Granola with Fruits</h5>
+			<p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+			<h5>Belgian Waffle</h5>
+			<p>Vanilla flavored batter with malted flour 7.50</p>
+			<h5>Scrambled eggs</h5>
+			<p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+			<h5>Blueberry Pancakes</h5>
+			<p>With syrup, butter and lots of berries 8.50</p>
+		</div>
+		<div id="image-container2">
+			<img src="Menu.jpg" width="100%" alt="Menu Image">
+		</div>
+	</div>
+	<hr>
+	<div id="contact-section">
+		<h1>Contact</h1>
+		<p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+		<p style="color: rgb(31, 99, 87); font-size: 18px;">Catering Service, 42nd Living St, 43043 New York, NY</p>
+		<p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+		<form action="">
+			<input type="text" placeholder="Name">
+			<input type="text" placeholder="How many people">
+			<input type="date">
+			<input type="text" placeholder="Message\Special Requirements">
+			
+		</form>
+		<button>SEND MESSAGE</button>
+	</div>
+</div>
+
+<div id="footer">
+	Powered by <a href="">w3.css</a>
+</div>
+</body>
+</html>
